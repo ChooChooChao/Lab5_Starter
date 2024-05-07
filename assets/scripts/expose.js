@@ -15,17 +15,17 @@ function init() {
       case "air-horn":
         imageToDisplay.src = "assets/images/air-horn.svg";
         imageToDisplay.alt = "air-horn";
-        audioToPlay.src = "air-horn.mp3";
+        audioToPlay.src = "assets/audio/air-horn.mp3";
         break;
       case "car-horn":
         imageToDisplay.src = "assets/images/car-horn.svg";
         imageToDisplay.alt = "car-horn";
-        audioToPlay.src = "car-horn.mp3";
+        audioToPlay.src = "assets/audio/car-horn.mp3";
         break;
       case "party-horn":
         imageToDisplay.src = "assets/images/party-horn.svg";
         imageToDisplay.alt = "party-horn";
-        audioToPlay.src = "party-horn.mp3";
+        audioToPlay.src = "assets/audio/party-horn.mp3";
         break;
     }
   });
@@ -51,4 +51,16 @@ function init() {
 
     audioToPlay.volume = sliderValue.value / 100;
   });
+
+  // play sound button
+  const playSound = document.querySelector("button");
+
+  playSound.addEventListener("click", (event) => {
+    audioToPlay.play();
+    if (selectHorn.value == "party-horn") {
+      const jsConfetti = new JSConfetti()
+      jsConfetti.addConfetti()
+    }
+  });
 }
+

@@ -38,7 +38,7 @@ function init() {
   });
 
   const toTalk = document.querySelector("button");
-  
+
   toTalk.addEventListener("click", (event) => {
     const utterThis = new SpeechSynthesisUtterance(text.value);
     const selectedOption = voiceSelect.selectedOptions[0].getAttribute("data-name");
@@ -48,7 +48,14 @@ function init() {
         utterThis.voice = voices[i];
       }
     }
+    
+    const displayImage = document.querySelector("img");
+    displayImage.src = "assets/images/smiling-open.png";
 
+    utterThis.onend = function() {
+      displayImage.src = "assets/images/smiling.png";
+    }
+    
     synth.speak(utterThis);
   });
 }

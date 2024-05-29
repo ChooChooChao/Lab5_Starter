@@ -3,8 +3,8 @@ Members:
 Nathan Chao - A16785338
 
 
-- My "expose.html" page [here](choochoochao.github.io/Lab5-Starter/expose.html)
-- My "explore.html" page [here](choochoochao.github.io/Lab5-Starter/explore.html)
+- My "expose.html" page [here](choochoochao.github.io/Lab5_Starter/expose.html)
+- My "explore.html" page [here](choochoochao.github.io/Lab5_Starter/explore.html)
 
 Explore - Part 3: 
 

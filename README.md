@@ -3,8 +3,8 @@ Members:
 Nathan Chao - A16785338
 
 
-- My "expose.js" [here](http://127.0.0.1:5500/expose.html)
-- My "explore.js" [here](http://127.0.0.1:5500/explore.html)
+- My "expose.html" page [here](choochoochao.github.io/Lab5-Starter/expose.html)
+- My "explore.html" page [here](choochoochao.github.io/Lab5-Starter/explore.html)
 
 Explore - Part 3: 
 

@@ -54,12 +54,12 @@ function init() {
 
   // play sound button
   const playSound = document.querySelector("button");
-
+  const jsConfetti = new JSConfetti();
   playSound.addEventListener("click", (event) => {
     audioToPlay.play();
     if (selectHorn.value == "party-horn") {
-      const jsConfetti = new JSConfetti()
-      jsConfetti.addConfetti()
+      jsConfetti.addConfetti();
+      
     }
   });
 }
